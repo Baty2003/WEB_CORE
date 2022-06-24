@@ -271,6 +271,11 @@ html {
 .slider {
 	display: flex;
 	overflow-x: scroll;
+	-ms-overflow-style: none;
+    scrollbar-width: none; 
+}
+.slider::-webkit-scrollbar {
+    display: none;
 }
 
 .main__slider{
