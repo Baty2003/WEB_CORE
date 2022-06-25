@@ -1,8 +1,9 @@
 
 @import url(fonts.css);
 
-html {
+html,body {
 	box-sizing: border-box;
+	height: 100%;
   }
   *, *:before, *:after {
 	box-sizing: inherit;
@@ -18,6 +19,7 @@ html {
 	overflow-x:scroll;
 	min-width: 320px;
   }
+
 
 
 
@@ -68,6 +70,7 @@ html {
 
 .nav-header__item {
 	display: flex;
+	align-items: center;
 	align-self: center;
 }
 
@@ -152,9 +155,8 @@ html {
 	}
 }
 
-.menu-burger{
+.button-icon{
 	position: relative;
-	background:url(../icon/burger.svg);
 	width: 40px;
 	height: 40px;
 	padding: 0;
@@ -164,6 +166,7 @@ html {
 .nav-menu__menu-burger{
 	position: relative;
 	margin: 4px 16px 0 0;
+	background:url(../icon/burger.svg);
 }
 
 @media (min-width:768px) {
@@ -241,6 +244,7 @@ html {
 .main{
 	background-color:#F8F8F8;
 	padding-top: 21px;
+	min-height: 100vh;
 }
 
 @media (min-width:768px) {
@@ -395,3 +399,108 @@ html {
 
 
 /* --------------footer-------------- */
+
+
+/* --------------Mobile menu-------------- */
+
+
+.mobile-menu {
+	min-height: 100%;
+	width: 320px;
+}
+.mobile-menu__container {
+	padding: 13px 24px 32px 24px;
+}
+
+.button-icon--close {
+	background: url("../icon/burgerClose.svg");
+}
+.button-icon--search {
+	background: url("../icon/search.svg");
+}
+
+.mobile-menu__item-logo{
+	margin: 5px 0 0 0;
+}
+
+.list-item {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.mobile-menu__list-item {
+	margin-top: 46px;
+}
+.list-item__item {
+	position: relative;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: -0.2px;
+	font-weight: 500;
+	margin-bottom: 32px;
+}
+.list-item__link {
+	text-decoration: none;
+	color: #1b1c21;
+}
+
+.list-item__item--active a{
+	color: #7E7E82;
+}
+
+
+.list-item__item--active::before{
+	content: "";
+	width: 8px;
+	height: 32px;
+	background: #41F6D7;
+	position: absolute;
+	border-radius: 6px;
+	left: -28px;
+	top: -5px;	
+}
+.mobile-menu__footer {
+	margin-top: 268px;
+}
+
+.mobile-menu__email {
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 16px;
+	letter-spacing: -0.2px;
+	color: #1b1c21;
+	margin: 20px 0 0 0;
+}
+.mobile-menu__phone {
+	font-size: 24px;
+	line-height: 24px;
+	letter-spacing: -0.6px;
+	font-weight: bold;
+	color: #1b1c21;
+	margin: 20px 0 0 0;
+}
+.mobile-menu__list-change-lang {
+	margin-top:44px;
+}
+.change-button {
+	background: none;
+	border: none;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: -0.2px;
+	color: #1b1c21;
+	display: inline-block;
+	font-weight: 500;
+	padding: 0;
+	margin: 0;
+}
+
+.change-button.active{
+	color: #7E7E82;
+}
+
+
+.mobile-menu__change-button {
+	margin-right: 7px;
+}
