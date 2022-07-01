@@ -572,9 +572,6 @@ html,body {
 
 /* Slider */
 
-body{ 
-	overflow: hidden;
-}
 
 .swiper-container{
 	width: 100%;
