@@ -1,0 +1,26 @@
+.swiper-container {
+}
+.swiper {
+	margin: 0 0 0 24px;
+}
+.swiper-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+}
+.swiper-slide {
+	margin: 0 20px 16px 0;
+}
+.swiper-slide__content {
+	width: 224px;
+}
+
+@media (min-width:1120px) {
+	.swiper-slide__content{
+		width: 240px;
+	}
+}
+
+.swiper-slide:nth-of-type(8) ~ .swiper-slide{
+	display: none;
+}
+
