@@ -214,7 +214,11 @@ html,body {
 .nav-menu__menu-burger{
 	position: relative;
 	margin: 4px 16px 0 0;
-	background:url(../icon/burger.svg);
+	
+}
+
+.button-icon--burger-menu{
+	background:url(../icon/burger.svg) no-repeat;
 }
 
 @media (min-width:768px) {
